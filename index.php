@@ -13,19 +13,34 @@
         <nav>
             <div>
                 <ul>
-                    <li><a href="#index">Início</a></li>
-                    <li><a href="whois.php">Whois</a></li>
-                    <li><a href="geoip.php">Geo IP</a></li>
-                    <li><a href="yourip.php">Seu IP</a></li>
+                    <li><a href="?page=home">Home</a></li>
+                    <li><a href="?page=whois">Whois</a></li>
+                    <li><a href="?page=geoip">Geo IP</a></li>
+                    <li><a href="?page=currentip">Seu IP</a></li>
                 </ul>
             </div>
         </nav>
     </header>
     <div>
-        <a name="index">
-            <h1> Projeto IP</h1>
-        </a>
-        <p>Corpo inicial.</p>
+        <h1>IP Project</h1>
+        <?php
+            switch (@$_REQUEST["page"]) {
+                case "home":
+                    include("home.php");
+                    break;
+                case "whois":
+                    include("whois.php");
+                    break;
+                case "geoip":
+                    include("geoip.php");
+                    break;
+                case "currentip":
+                    include("currentip.php");
+                    break;
+                default:
+                    include("home.php");
+            }
+        ?>
     </div>
 </body>
 </html>
