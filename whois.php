@@ -756,6 +756,6 @@
                 $output .= fgets($whoisinfo,128); 
             fclose($whoisinfo);
         }
-        echo "<pre>" . $output . "</pre>";
+        echo "<pre class='return-card'>" . $output . "</pre>";
     }
 ?>

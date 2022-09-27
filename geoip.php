@@ -7,7 +7,7 @@
         <input class="" name="send" type="submit" value="Buscar">
     </form>
 </div>
-<div>
+<div class="return-card">
     <?php
         $ip = $_POST['ip'];
         if($ip){
