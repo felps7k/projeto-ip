@@ -1,3 +1,6 @@
+<div>
+    <h2>CurrentIP</h2>
+</div>
 <?php
     $ip = $_SERVER['REMOTE_ADDR'];
     if($ip){
@@ -7,16 +10,16 @@
             echo 'IP: ' . $ip;
             echo '<br />';
             
-            echo 'Provedor: ' . $query['isp'];
+            echo 'ISP: ' . $query['isp'];
             echo '<br />';
 
-            echo 'Cidade: ' . $query['city'];
+            echo 'City: ' . $query['city'];
             echo '<br />';
             
-            echo 'País: ' . $query['country'];
+            echo 'Country: ' . $query['country'];
             echo '<br />';
             
-            echo 'Região: ' . $query['regionName'];
+            echo 'Region: ' . $query['regionName'];
         }    
     }
 ?>

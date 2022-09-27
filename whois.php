@@ -1,3 +1,6 @@
+<div>
+    <h2>Whois</h2>
+</div>
 <div class="field">
     <form action="" method="POST">
         <input class="" name="whois" type="text" placeholder="sasuke.com.br">

@@ -1,6 +1,9 @@
+<div>
+    <h2>GeoIP</h2>
+</div>
 <div class="field">
     <form action="" method="POST">
-        <input class="" name="ip" type="text" placeholder="Informe o endereço IP" v-model="geoip_ip">
+        <input class="" name="ip" type="text" placeholder="177.170.7.70" v-model="geoip_ip">
         <input class="" name="send" type="submit" value="Buscar">
     </form>
 </div>
@@ -14,16 +17,16 @@
                 echo 'IP: ' . $ip;
                 echo '<br />';
                 
-                echo 'Provedor: ' . $query['isp'];
+                echo 'ISP: ' . $query['isp'];
+                echo '<br />';
+    
+                echo 'City: ' . $query['city'];
                 echo '<br />';
                 
-                echo 'Cidade: ' . $query['city'];
+                echo 'Country: ' . $query['country'];
                 echo '<br />';
                 
-                echo 'País: ' . $query['country'];
-                echo '<br />';
-                
-                echo 'Região: ' . $query['regionName'];
+                echo 'Region: ' . $query['regionName'];
             }    
         }
     ?>
