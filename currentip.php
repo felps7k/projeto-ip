@@ -8,6 +8,9 @@
             $query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
             if($query && $query['status'] == 'success')
             {
+                ?>
+                <div class="return-card">
+                <?php
                 echo 'IP: ' . $ip;
                 echo '<br />';
                 
@@ -21,6 +24,9 @@
                 echo '<br />';
                 
                 echo 'Region: ' . $query['regionName'];
+                ?>
+                </div>
+                <?php
             }    
         }
     ?>
