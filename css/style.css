@@ -1,19 +1,92 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa&display=swap');
 
-.return-card {
+* {
+    margin: 0;
+}
+
+/*Search button*/
+.button-search {
+    background-color: #FFFFFF;
+    border: 0;
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1), 0 1px 2px 0 rgba(0, 0, 0, 0.06);
+    cursor: pointer;
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.button-search:hover {
+    background-color: rgb(249,250,251);
+}
+
+.button-search:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.button-search:focus-visible {
+    box-shadow: none;
+}
+
+/*Search box*/
+.search-box {
+    background-color: #FFFFFF;
+    border: 1px solid rgb(209,213,219);
+    border-radius: .5rem;
+    box-sizing: border-box;
+    color: #111827;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.25rem;
+    padding: .75rem 1rem;
+    text-align: center;
+    text-decoration: none #D1D5DB solid;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+    user-select: none;
+    -webkit-user-select: none;
+    touch-action: manipulation;
+}
+
+.search-box:hover {
+    background-color: rgb(249,250,251);
+}
+
+.search-box:focus {
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.search-box:focus-visible {
+    box-shadow: none;
+}
+
+/*Result box*/
+.result-card {
     background-color: rgba(240, 240, 240, 0.26);
     border: 1px solid #DFDFDF;
     border-radius: 16px;
     box-sizing: border-box;
     color: #000000;
-    display: flex;
+    font: 14px/18px Monaco,Courier,"Courier New",monospace;
     line-height: 28px;
-    max-width: 100%;
+    white-space: pre-wrap;
+    max-width: 50%;
+    overflow: auto;
     padding: 14px 22px;
-    width: 100%;
     font-family: inherit;
     font-weight: 420;
-  }
+}
 
 /*Top menu CSS*/
 #sse1 {

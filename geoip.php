@@ -3,8 +3,8 @@
 </div>
 <div class="field">
     <form action="" method="POST">
-        <input class="" name="ip" type="text" placeholder="177.170.7.70" v-model="geoip_ip">
-        <input class="" name="send" type="submit" value="Buscar">
+        <input class="search-box" name="ip" type="text" placeholder="177.170.7.70" v-model="geoip_ip">
+        <input class="button-search" name="send" type="submit" value="Buscar">
     </form>
 </div>
 <?php
@@ -14,7 +14,7 @@
         if($query && $query['status'] == 'success')
         {
             ?>
-            <div class="return-card">
+            <div class="result-card">
             <?php
             echo 'IP: ' . $ip;
             echo '<br />';
