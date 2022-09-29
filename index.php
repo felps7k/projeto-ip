@@ -13,6 +13,7 @@
     <header>
         <nav>
             <div id="sse1">
+                <h1>IP Project</h1>
                 <div id="sses1">
                     <ul>
                         <li><a href="?page=home">Home</a></li>
@@ -25,25 +26,26 @@
         </nav>
     </header>
     <div>
-        <h1>IP Project</h1>
-        <?php
-            switch (@$_REQUEST["page"]) {
-                case "home":
-                    include("home.php");
-                    break;
-                case "whois":
-                    include("whois.php");
-                    break;
-                case "geoip":
-                    include("geoip.php");
-                    break;
-                case "currentip":
-                    include("currentip.php");
-                    break;
-                default:
-                    include("home.php");
-            }
-        ?>
+        <div class="content">
+            <?php
+                switch (@$_REQUEST["page"]) {
+                    case "home":
+                        include("home.php");
+                        break;
+                    case "whois":
+                        include("whois.php");
+                        break;
+                    case "geoip":
+                        include("geoip.php");
+                        break;
+                    case "currentip":
+                        include("currentip.php");
+                        break;
+                    default:
+                        include("home.php");
+                }
+            ?>
+        </div>
     </div>
 </body>
 </html>

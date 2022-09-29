@@ -3,8 +3,10 @@
 </div>
 <div class="field">
     <form action="" method="POST">
-        <input class="search-box" name="whois" type="text" placeholder="sasuke.com.br">
-        <input class="button-search" type="submit" name="enviar" value="Whois">
+        <div class="search-submit">
+            <input class="search-box" name="whois" type="text" placeholder="sasuke.com.br">
+            <input class="button-search" type="submit" name="enviar" value="Whois">
+        </div>
     </form>
 </div>
 
@@ -756,6 +758,6 @@
                 $output .= fgets($whoisinfo,128); 
             fclose($whoisinfo);
         }
-        echo "<pre class='result-card'>" . $output . "</pre>";
+        echo "<div class='result-box'><pre class='result-card'>" . $output . "</pre></div>";
     }
 ?>

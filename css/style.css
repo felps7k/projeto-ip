@@ -4,6 +4,22 @@
     margin: 0;
 }
 
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+}
+
+.field {
+    padding-top: 2rem;
+}
+
+.search-submit {
+    display: flex;
+    justify-content: center;
+}
+
 /*Search button*/
 .button-search {
     background-color: #FFFFFF;
@@ -23,6 +39,8 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    width: 6rem;
+    margin-left: 1.25rem;
 }
 
 .button-search:hover {
@@ -56,6 +74,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
+    width: 27rem;
 }
 
 .search-box:hover {
@@ -72,6 +91,13 @@
 }
 
 /*Result box*/
+.result-box {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
 .result-card {
     background-color: rgba(240, 240, 240, 0.26);
     border: 1px solid #DFDFDF;
@@ -81,7 +107,7 @@
     font: 14px/18px Monaco,Courier,"Courier New",monospace;
     line-height: 28px;
     white-space: pre-wrap;
-    max-width: 50%;
+    max-width: 34.25rem;
     overflow: auto;
     padding: 14px 22px;
     font-family: inherit;
@@ -97,10 +123,12 @@
     padding: 15px;
     left: 0px;
     box-sizing: content-box;
-    background-image: url(../img/logo.png);
+    /*background-image: url(../img/logo.png);*/
     background-position: left;
     background-repeat: no-repeat;
     background-size: 100px;
+    display: flex;
+    align-items: center;
 }
 #sses1 {
     margin:0 auto;

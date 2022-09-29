@@ -3,35 +3,38 @@
 </div>
 <div class="field">
     <form action="" method="POST">
-        <input class="search-box" name="ip" type="text" placeholder="177.170.7.70" v-model="geoip_ip">
-        <input class="button-search" name="send" type="submit" value="Buscar">
+        <div class="search-submit">
+            <input class="search-box" name="ip" type="text" placeholder="177.170.7.70" v-model="geoip_ip">
+            <input class="button-search" name="send" type="submit" value="Buscar">
+        </div>
     </form>
 </div>
-<?php
-    $ip = $_POST['ip'];
-    if($ip){
-        $query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
-        if($query && $query['status'] == 'success')
-        {
-            ?>
-            <div class="result-card">
-            <?php
-            echo 'IP: ' . $ip;
-            echo '<br />';
-            
-            echo 'ISP: ' . $query['isp'];
-            echo '<br />';
+<div class="result-box">
+    <?php
+        $ip = $_POST['ip'];
+        if($ip){
+            $query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
+            if($query && $query['status'] == 'success'){
+                ?>
+                <div class="result-card">
+                    <?php
+                        echo 'IP: ' . $ip;
+                        echo '<br />';
+                        
+                        echo 'ISP: ' . $query['isp'];
+                        echo '<br />';
 
-            echo 'City: ' . $query['city'];
-            echo '<br />';
-            
-            echo 'Country: ' . $query['country'];
-            echo '<br />';
-            
-            echo 'Region: ' . $query['regionName'];
-            ?>
-            </div>
-            <?php
-        }    
-    }
-?>
+                        echo 'City: ' . $query['city'];
+                        echo '<br />';
+                        
+                        echo 'Country: ' . $query['country'];
+                        echo '<br />';
+                        
+                        echo 'Region: ' . $query['regionName'];
+                    ?>
+                </div>
+                <?php
+            }
+        }
+    ?>
+</div>
