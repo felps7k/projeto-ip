@@ -16,7 +16,7 @@
             $query = @unserialize(file_get_contents('http://ip-api.com/php/'.$ip));
             if($query && $query['status'] == 'success'){
                 ?>
-                <div class="result-card">
+                <div class="result-card" id="result-ip">
                     <?php
                         echo '<p><b>IP:</b> ' . $ip;
                         echo '</p>';
