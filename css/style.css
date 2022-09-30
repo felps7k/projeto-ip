@@ -2,6 +2,7 @@
 
 * {
     margin: 0;
+    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
 }
 
 .content {
@@ -27,7 +28,6 @@
     border-radius: .5rem;
     box-sizing: border-box;
     color: #111827;
-    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: .875rem;
     font-weight: 600;
     line-height: 1.25rem;
@@ -63,7 +63,6 @@
     border-radius: .5rem;
     box-sizing: border-box;
     color: #111827;
-    font-family: "Inter var",ui-sans-serif,system-ui,-apple-system,system-ui,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
     font-size: .875rem;
     font-weight: 600;
     line-height: 1.25rem;
@@ -74,7 +73,7 @@
     user-select: none;
     -webkit-user-select: none;
     touch-action: manipulation;
-    width: 27rem;
+    width: 35.1rem;
 }
 
 .search-box:hover {
@@ -92,7 +91,8 @@
 
 /*Result box*/
 .result-box {
-    max-width: 100%;
+    width: 100%;
+    max-width: 1000px;
     display: flex;
     justify-content: center;
     padding-top: 2rem;
@@ -104,14 +104,11 @@
     border-radius: 16px;
     box-sizing: border-box;
     color: #000000;
-    font: 14px/18px Monaco,Courier,"Courier New",monospace;
     line-height: 28px;
-    white-space: pre-wrap;
-    max-width: 34.25rem;
     overflow: auto;
     padding: 14px 22px;
-    font-family: inherit;
-    font-weight: 420;
+    font-weight: 500;
+    white-space: pre-line;
 }
 
 /*Top menu CSS*/
@@ -123,10 +120,10 @@
     padding: 15px;
     left: 0px;
     box-sizing: content-box;
-    /*background-image: url(../img/logo.png);*/
+    background-image: url(../images/iproject-logo.png);
     background-position: left;
     background-repeat: no-repeat;
-    background-size: 100px;
+    background-size: 10rem;
     display: flex;
     align-items: center;
 }
@@ -163,7 +160,6 @@
     padding-top: 8px;
     margin: 0 20px;
     color: #000000;
-    font-family: 'Comfortaa', cursive;
     font-size: 12px;
     text-align: center;
     text-decoration: none;
@@ -171,4 +167,5 @@
     display: block;
     position: relative;
     z-index: 2;
+    font-weight: 500;
 }

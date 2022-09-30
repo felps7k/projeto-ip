@@ -4,7 +4,7 @@
     <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Links -->
-    <link rel="icon" href="favicons/favicon.ico">
+    <link rel="icon" href="favicon/favicon.ico">
     <link rel="stylesheet" href="css/style.css">
     <script type="text/javascript" src="js/script.js"></script>
     <title>IP Project</title>
@@ -13,7 +13,6 @@
     <header>
         <nav>
             <div id="sse1">
-                <h1>IP Project</h1>
                 <div id="sses1">
                     <ul>
                         <li><a href="?page=home">Home</a></li>

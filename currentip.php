@@ -10,19 +10,20 @@
                 ?>
                 <div class="result-card">
                     <?php
-                        echo 'IP: ' . $ip;
-                        echo '<br />';
+                        echo '<p><b>IP:</b> ' . $ip;
+                        echo '</p>';
                         
-                        echo 'ISP: ' . $query['isp'];
-                        echo '<br />';
+                        echo '<p><b>ISP:</b> ' . $query['isp'];
+                        echo '</p>';
                         
-                        echo 'City: ' . $query['city'];
-                        echo '<br />';
+                        echo '<p><b>City:</b> ' . $query['city'];
+                        echo '</p>';
                         
-                        echo 'Country: ' . $query['country'];
-                        echo '<br />';
+                        echo '<p><b>Country:</b> ' . $query['country'];
+                        echo '</p>';
                         
-                        echo 'Region: ' . $query['regionName'];
+                        echo '<p><b>Region:</b> ' . $query['regionName'];
+                        echo '</p>';
                     ?>
                 </div>
                 <?php
